@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 
 import Home from "./pages/Home";
@@ -11,7 +11,6 @@ import Legal from "./pages/Legal";
 
 export default function App () {
   return(
-    <div>
      
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -21,6 +20,6 @@ export default function App () {
         <Route path="/service" element={<Service />}></Route>
         <Route path="/legal" element={<Legal />}></Route>
       </Routes>
-    </div>
+   
   )
 }
