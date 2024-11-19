@@ -12,13 +12,13 @@ export default function Footer() {
                 </div>
                 <div>
                     <a href="https://github.com" target="_blank">
-                        <img src="../public/icon/github-brands-solid.svg" alt="Icon de Github" />
+                        <img src="../public/icon/github-brands-solid.svg" alt="Icon de Github" className="logo"/>
                     </a>
                     <a href="https://twitter.com" target="_blank">
-                        <img src="../public/icon/square-twitter-brands-solid.svg" alt="Icon de Twitter" />
+                        <img src="../public/icon/square-twitter-brands-solid.svg" alt="Icon de Twitter" className="logo"/>
                     </a>
                     <a href="https://linkedin.com" target="_blank">
-                        <img src="../public/icon/linkedin-brands-solid.svg" alt="Icon de Linkedin" />
+                        <img src="../public/icon/linkedin-brands-solid.svg" alt="Icon de Linkedin" className="logo"/>
                     </a>
                 </div>
             </section>
@@ -49,7 +49,7 @@ export default function Footer() {
                 </ul>
             </section>
             <div>
-                <img src="../public/icon/copyright-regular.svg" alt="signe copyright" />
+                <img src="../public/icon/copyright-regular.svg" alt="signe copyright" className="icon"/>
                 <span>Designed by John Doe</span>
             </div>
         </>

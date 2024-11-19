@@ -15,7 +15,7 @@ const Service = () => {
                 <span>Voici les prestations sur lesquelles je peus intervenir.</span>
                 <div>
                     <section>
-                        <img src="../pblic/icon/display-solid.svg" alt="icon d'un ordinateur." />
+                        <img src="../public/icon/display-solid.svg" alt="icon d'un ordinateur." className="iconservice"/>
                         <h3>UX DESIGN</h3>
                         <p>
                             L'<strong>UX Design </strong>est une méthode de conception centrée sur l'utilisateur.
@@ -23,17 +23,17 @@ const Service = () => {
                         </p>
                     </section>
                     <section>
-                        <img src="../pblic/icon/file-code-solid.svg" alt="icon d'un fichier." />
+                        <img src="../public/icon/file-code-solid.svg" alt="icon d'un fichier." className="iconservice"/>
                         <h3>développement web</h3>
                         <p>
-                            Le<strong>développement des sites web </strong>repose sur l'utilisation des langages
+                            Le<strong> développement des sites web </strong>repose sur l'utilisation des langages
                              HTML, CSS, JavaScript et PHP.
                         </p>
                     </section>
                     <section>
-                        <img src="../pblic/icon/magnifying-glass-dollar-solid.svg" alt="icon d'une loupe avec le signe du dollar à l'intérieur." />
+                        <img src="../public/icon/magnifying-glass-dollar-solid.svg" alt="icon d'une loupe avec le signe du dollar à l'intérieur." className="iconservice"/>
                         <h3>référencement</h3>
-                        <p>Le<strong>référencement naturel d'un site, </strong>aussi appelé SEO, consiste à mettre
+                        <p>Le<strong> référencement naturel d'un site, </strong>aussi appelé SEO, consiste à mettre
                          des techniques en oeuvre pour améliorer sa position dans les résultats des moteurs de recherche.</p>
                     </section>
                 </div>

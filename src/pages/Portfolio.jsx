@@ -19,7 +19,7 @@ const Portfolio = () => {
                             <img src="../public/portfolio/fresh-food.jpg" alt="Image représentant un panier de légume frais" />
                             <h3>Fresh food</h3>
                             <span>Réalisation d'un site avec commande en ligne.</span>
-                            <button type="button" class="btn btn-outline-primary">Voir</button>
+                            <button type="button" className="btn btn-outline-primary">Voir</button>
                         </div>
                         <span>Site réalisé avec PHP et MySQL</span>
                     </section>
@@ -28,7 +28,7 @@ const Portfolio = () => {
                             <img src="../public/portfolio/restaurant-japonais.jpg" alt="Image représentant des sushis et des makis" />
                             <h3>Restaurant Akira</h3>
                             <span>Réalisation d'un site vitrine.</span>
-                            <button type="button" class="btn btn-outline-primary">Voir</button>
+                            <button type="button" className="btn btn-outline-primary">Voir</button>
                         </div>
                         <span>Site réalisé avec WordPress</span>
                     </section>
@@ -37,7 +37,7 @@ const Portfolio = () => {
                             <img src="../public/portfolio/espace-bien-etre.jpg" alt="Image représentant un bouddha une fleur de lotus et des pierres d'équilibre zen." />
                             <h3>Espace bien-être</h3>
                             <span>Réalisation d'un site vitrine pour un praticien de bien-être.</span>
-                            <button type="button" class="btn btn-outline-primary">Voir</button>
+                            <button type="button" className="btn btn-outline-primary">Voir</button>
                         </div>
                         <span>Site réalisé en HTML/CSS</span>
                     </section>
