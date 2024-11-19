@@ -23,7 +23,7 @@ const Blog = () => {
                             <span>Some quick example text to build on the card title and make upthe bulk of the card's content.</span>
                             <button type="button" class="btn btn-primary">Lire la suite</button>
                         </div>
-                        <span>Publié le 22 août 2022</span>
+                        <span>Publié le <time datetime="2022-08-22">22 août 2022</time></span>
                     </article>
                     <article>
                         <div>
@@ -32,7 +32,7 @@ const Blog = () => {
                             <span>Some quick example text to build on the card title and make upthe bulk of the card's content.</span>
                             <button type="button" class="btn btn-primary">Lire la suite</button>
                         </div>
-                        <span>Publié le 20 août 2022</span>
+                        <span>Publié le <time datetime="2022-08-20">20 août 2022</time></span>
                     </article>
                     <article>
                         <div>
@@ -41,7 +41,7 @@ const Blog = () => {
                             <span>Some quick example text to build on the card title and make upthe bulk of the card's content.</span>
                             <button type="button" class="btn btn-primary">Lire la suite</button>
                         </div>
-                        <span>Publié le 1 août 2022</span>
+                        <span>Publié le <time datetime="2022-08-01">1 août 2022</time></span>
                     </article>
                     <article>
                         <div>
@@ -50,7 +50,7 @@ const Blog = () => {
                             <span>Some quick example text to build on the card title and make upthe bulk of the card's content.</span>
                             <button type="button" class="btn btn-primary">Lire la suite</button>
                         </div>
-                        <span>Publié le 31 juillet 2022</span>
+                        <span>Publié le <time datetime="2022-07-31">31 juillet 2022</time></span>
                     </article>
                     <article>
                         <div>
@@ -59,7 +59,7 @@ const Blog = () => {
                             <span>Some quick example text to build on the card title and make upthe bulk of the card's content.</span>
                             <button type="button" class="btn btn-primary">Lire la suite</button>
                         </div>
-                        <span>Publié le 30 juillet 2022</span>
+                        <span>Publié le <time datetime="2022-07-30">30 juillet 2022</time></span>
                     </article>
                     <article>
                         <div>
@@ -68,7 +68,7 @@ const Blog = () => {
                             <span>Some quick example text to build on the card title and make upthe bulk of the card's content.</span>
                             <button type="button" class="btn btn-primary">Lire la suite</button>
                         </div>
-                        <span>Publié le 12 juillet 2022</span>
+                        <span>Publié le <time datetime="2022-07-12">12 juillet 2022</time></span>
                     </article>
                 </div>
             </main>
