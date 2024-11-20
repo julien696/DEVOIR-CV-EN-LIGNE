@@ -1,13 +1,29 @@
-
-
-.logo{
-    width:48px;
+@font-face {
+    font-family:"NunitoSans";
+    src: url("../public/font/NunitoSans_7pt_Condensed-Regular.woff"),
+         url("../public/font/NunitoSans_7pt_Condensed-Regular.ttf");
 }
 
-.icon{
-    width: 16px;
+h1, h2, h3, h4{
+    font-family: "NunitoSans";
+    font-weight: 600;
 }
 
-.iconservice{
-    width: 64px;
+.container-first-title{
+    height: 100vw;
+    background-image: url("../public/img/hero-bg-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.first-title{
+    text-align: center;    
+    font-size: 10vw;
+}
+
+.container-about{
+    box-shadow: 5px 5px 5px whitesmoke, -5px -5px 5px whitesmoke;
+}
+
+

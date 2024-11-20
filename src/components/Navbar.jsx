@@ -4,7 +4,7 @@ export default function Navbar() {
     return(
         <nav className="navbar navbar-expand-lg bg-dark text-uppercase">
             <div className="container">
-                <Link className="navbar-brand text-uppercase text-white" to="/">john doe</Link>
+                <Link className="navbar-brand text-uppercase text-white" to="/"><img src="../public/img/favicon.png" alt="logo du site représentant 4 vagues de couleurs bleu et violet superposées" /></Link>
                 <button className="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

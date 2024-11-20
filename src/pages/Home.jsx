@@ -8,16 +8,14 @@ const Home = () => {
                 <Navbar />
             </header>
             <main>
-                <section>
-                    <div>
-                        <h1>Bonjour, je suis John Doe</h1>
-                        <h2>Développeur web full stack</h2>
-                        <button type="button" className="btn btn-primary">En savoir plus</button>
-                    </div>
-                </section>
-                <section>
-                    <article>
-                        <h3>à propos</h3>
+                <div className="d-flex flex-column justify-content-center align-items-center container-first-title" >
+                    <h1 className="m-2 p-2 text-light first-title">Bonjour, je suis John Doe</h1>
+                    <h2 className="mb-2 p-2 text-light ">Développeur web full stack</h2>
+                    <button type="button" className="btn btn-primary">En savoir plus</button>
+                </div>
+                <section className="d-flex flex-column mx-4 my-5 px-4 py-5 container-about">
+                    <article >
+                        <h3 className="">À propos</h3>
                         <p>Passioné par l'informatique et les nouvelles technologies,
                             j'ai suivi une formation d'<strong>intégrateur-développeur web </strong>
                             au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides
@@ -32,7 +30,7 @@ const Home = () => {
                             je respecte les bonnes pratiques du web.
                         </p>
                     </article>
-                    <div>
+                    <div className="">
                         <img src="../../public/img/about.jpg" alt="Photo de profil de John Doe" />
                         <h4>Mes compétences</h4>
                             <div>
