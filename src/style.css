@@ -1,13 +1,53 @@
 @font-face {
-    font-family:"NunitoSans";
+    font-family:"NunitoSansR";
     src: url("../public/font/NunitoSans_7pt_Condensed-Regular.woff"),
          url("../public/font/NunitoSans_7pt_Condensed-Regular.ttf");
+    font-family:"NunitoSansS" ;
+    src: url("../public/font/NunitoSans_7pt_Condensed-SemiBold.woff"),
+         url("../public/font/NunitoSans_7pt_Condensed-SemiBold.ttf");
 }
 
-h1, h2, h3, h4{
-    font-family: "NunitoSans";
-    font-weight: 600;
+
+/*Général*/
+
+h1, h2, h3, h4, h5{
+    font-family: "NunitoSansS";
+    color: #1e1e1e;
 }
+
+strong{
+    color: black;
+    font-family: "NunitoSansS";
+}
+
+p, span{
+    font-family: "NunitoSansR";
+    color: #444;
+} 
+
+a{
+    text-decoration: none;
+    color: #444;
+}
+
+li{
+    list-style-image: url("../public/icon/chevron-right-solid.svg");
+}
+
+
+/*composant*/
+
+.footer{
+    background-color: #EEE;
+}
+
+.logo{
+    max-width: 48px;
+    margin:1rem ;
+}
+
+
+/*Home Page*/
 
 .container-first-title{
     height: 100vw;
@@ -24,6 +64,10 @@ h1, h2, h3, h4{
 
 .container-about{
     box-shadow: 5px 5px 5px whitesmoke, -5px -5px 5px whitesmoke;
+    border-radius: 10px;
 }
 
-
+.image-profil{
+    min-width: 100%;
+    border-radius: 5px;
+}
