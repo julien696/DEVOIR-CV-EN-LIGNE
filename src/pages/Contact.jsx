@@ -9,7 +9,7 @@ const Contact = () => {
             </header>
             <main>
                 <div>
-                    <h2>me contacter</h2>
+                    <h2>ME CONTACTER</h2>
                     <span>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</span>
                 </div>
                 <div>

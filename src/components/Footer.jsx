@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Footer() {
     return(
         <>
-            <div className="d-flex flex-column mt-5 pt-5 pb-3 footer">
+            <footer className="d-flex flex-column mt-5 pt-5 pb-3 footer">
                 <div className="px-3">
                     <section>
                         <h5>John Doe</h5>
@@ -28,7 +28,7 @@ export default function Footer() {
                         <h5>Liens utiles</h5>
                         <ul className="ps-3">
                             <li><Link to="/">Accueil</Link></li>
-                            <li><Link to="/">à propos</Link></li>
+                            <li><Link to="/">À propos</Link></li>
                             <li><Link to="/service">Services</Link></li>
                             <li><Link to="/contact">Me contacter</Link></li>
                             <li><Link to="/legal">Mentions légales</Link></li>
@@ -55,7 +55,7 @@ export default function Footer() {
                     <img src="../public/icon/copyright-regular.svg" alt="signe copyright" style={{width:16}} />
                     <span className="text-white ps-1">Designed by John Doe</span>
                 </div>
-            </div>
+            </footer>
         </>
     )
 }

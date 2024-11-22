@@ -13,7 +13,7 @@ const Legal = () => {
                     <div className="accordion-item">
                         <h3 className="accordion-header">
                             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                éditeur de site
+                                Éditeur de site
                             </button>
                         </h3>
                         <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">

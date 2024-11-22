@@ -4,18 +4,18 @@ import Footer from "../components/Footer";
 const Home = () => {
     return(
         <>
-            <header>
-                <Navbar />
-            </header>
+            <Navbar />
             <main>
-                <div className="d-flex flex-column justify-content-center align-items-center container-first-title" >
-                    <h1 className="m-2 p-2 text-light first-title">Bonjour, je suis John Doe</h1>
-                    <h2 className="mb-2 p-2 text-light ">Développeur web full stack</h2>
-                    <button type="button" className="btn btn-primary">En savoir plus</button>
+                <div className="container-first-title" >
+                    <div className="layout-first-title d-flex flex-column justify-content-center align-items-center "> 
+                        <h1 className="m-2 p-2 text-light first-title">Bonjour, je suis John Doe</h1>
+                        <h2 className="mb-2 p-2 text-light ">Développeur web full stack</h2>
+                        <button type="button" className="btn btn-primary">En savoir plus</button>
+                    </div>
                 </div>
                 <section className="d-flex flex-column my-5 p-5 container-about">
                     <article className="fs-5">
-                        <h3 className="fs-2">À propos</h3>
+                        <h3 className="fs-2 pb-2 mb-3 border-bottom border-primary border-3">À propos</h3>
                         <p className="fs-5">Passioné par l'informatique et les nouvelles technologies,
                             j'ai suivi une formation d'<strong>intégrateur-développeur web </strong>
                             au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides
@@ -58,9 +58,7 @@ const Home = () => {
                     </div>
                 </section>
             </main>
-            <footer>
-                <Footer/>
-            </footer>
+            <Footer/>
         </>
     )
 }
