@@ -1,52 +1,48 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar"
+import CardPortfolio from "../components/components-items/CardPortfolio";
 
 const Portfolio = () => {
     return(
         <>
-           <header>
-                <Navbar />
-                <div>
-                    <img src="../public/img/banner.jpg" alt="banner théme bleu et lumiére" />
+           <main className="bg-body-tertiary">
+                 <div>
+                    <img src="../public/img/banner.jpg" alt="banner théme bleu et lumiére" className="img-fluid" style={{minWidth:'100%', maxHeight:'10rem'}}/>
                 </div>
-           </header>
-           <main>
-                <h2>PORTFOLIO</h2>
-                <span>Voici quelques-unes de mes réalisations</span>
-                <div>
-                    <section>
-                        <div>
-                            <img src="../public/portfolio/fresh-food.jpg" alt="Image représentant un panier de légume frais" />
-                            <h3>Fresh food</h3>
-                            <span>Réalisation d'un site avec commande en ligne.</span>
-                            <button type="button" className="btn btn-outline-primary">Voir</button>
-                        </div>
-                        <span>Site réalisé avec PHP et MySQL</span>
-                    </section>
-                    <section>
-                        <div>
-                            <img src="../public/portfolio/restaurant-japonais.jpg" alt="Image représentant des sushis et des makis" />
-                            <h3>Restaurant Akira</h3>
-                            <span>Réalisation d'un site vitrine.</span>
-                            <button type="button" className="btn btn-outline-primary">Voir</button>
-                        </div>
-                        <span>Site réalisé avec WordPress</span>
-                    </section>
-                    <section>
-                        <div>
-                            <img src="../public/portfolio/espace-bien-etre.jpg" alt="Image représentant un bouddha une fleur de lotus et des pierres d'équilibre zen." />
-                            <h3>Espace bien-être</h3>
-                            <span>Réalisation d'un site vitrine pour un praticien de bien-être.</span>
-                            <button type="button" className="btn btn-outline-primary">Voir</button>
-                        </div>
-                        <span>Site réalisé en HTML/CSS</span>
-                    </section>
+                <div className="d-flex flex-column justify-content-center align-items-center py-5 px-3">
+                    <h2 className="fs-1 px-5 text-center">PORTFOLIO</h2>
+                    <span className="fs-4 text-center gradient">Voici quelques-unes de mes réalisations</span>
                 </div>
-           </main>
-           <footer>
-                <Footer />
-           </footer>
-            
+                <div className="container-fluid py-5">
+                    <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                        <section className="col">
+                            <div className="card text-center m-3">
+                                <CardPortfolio src = "../public/portfolio/fresh-food.jpg" 
+                                    alt = "Image représentant un panier de légume frais"
+                                    title = "Fresh food"
+                                    text = "Réalisation d'un site avec commande en ligne."
+                                    span = "Site réalisé avec PHP et MySQL"/>
+                            </div>
+                        </section>
+                        <section className="col">
+                            <div className="card text-center m-3">
+                                <CardPortfolio src = "../public/portfolio/restaurant-japonais.jpg"
+                                    alt = "Image représentant des sushis et des makis"
+                                    title = "Restaurant Akira"
+                                    text = "Réalisation d'un site vitrine."
+                                    span = "Site réalisé avec WordPress"/>
+                            </div>
+                        </section>
+                        <section className="col">
+                            <div className="card text-center m-3">
+                                <CardPortfolio src = "../public/portfolio/espace-bien-etre.jpg"
+                                    alt = "Image représentant un bouddha une fleur de lotus et des pierres d'équilibre zen."
+                                    title = "Espace bien-être"
+                                    text = "Réalisation d'un site vitrine pour un praticien de bien-être."
+                                    span = "Site réalisé en HTML/CSS"/>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+           </main>            
         </>
     )
 }

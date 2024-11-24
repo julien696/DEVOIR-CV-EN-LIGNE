@@ -8,10 +8,13 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Service from "./pages/Service";
 import Legal from "./pages/Legal";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function App () {
   return(
-     
+    <div className="App">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
@@ -20,6 +23,7 @@ export default function App () {
         <Route path="/service" element={<Service />}></Route>
         <Route path="/legal" element={<Legal />}></Route>
       </Routes>
-   
+      <Footer/>
+    </div>
   )
 }
