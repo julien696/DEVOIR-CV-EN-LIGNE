@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 export default function Footer() {
     return(
         <>
-            <footer className="d-flex flex-column mt-5 pt-5 pb-3 footer">
-                <div className="px-3">
-                    <section>
+            <footer className="container-fluid mx-auto m-4 p-4">
+                <div className="row">
+                    <section className="col-md-6 col-xl-3">
                         <h5>John Doe</h5>
                         <div>
                             <span>40 rue Laure Diebold</span><br/>
@@ -24,7 +24,7 @@ export default function Footer() {
                             </a>
                         </div>
                     </section>
-                    <section>
+                    <section className="col-md-6 col-xl-3">
                         <h5>Liens utiles</h5>
                         <ul className="ps-3">
                             <li><Link to="/">Accueil</Link></li>
@@ -34,7 +34,7 @@ export default function Footer() {
                             <li><Link to="/legal">Mentions légales</Link></li>
                         </ul>
                     </section>
-                    <section>
+                    <section className="col-md-6 col-xl-3">
                         <h5>Mes dernières réalisations</h5>
                         <ul className="ps-3">
                             <li><Link to="/portfolio">Fresh food</Link></li>
@@ -42,7 +42,7 @@ export default function Footer() {
                             <li><Link to="/portfolio">Espace bien-être</Link></li>
                         </ul>
                     </section>
-                    <section>
+                    <section className="col-md-6 col-xl-3">
                         <h5>Mes derniers articles</h5>
                         <ul className="ps-3">
                             <li><Link to="/blog">Coder son site en HTML/CSS</Link></li>
