@@ -1,18 +1,12 @@
 import CardBlog from "../components/components-items/CardBlog";
-import Card from "../components/components-items/CardPortfolio";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar"
 
 const Blog = () => {
     return(
         <>
-            <header>
-                <Navbar />
-                <div>
+            <main className="bg-body-tertiary">
+                 <div>
                     <img src="../public/img/banner.jpg" alt="banner théme bleu et lumiére" className="img-fluid" style={{minWidth:'100%', maxHeight:'10rem'}}/>
                 </div>
-            </header>
-            <main className="bg-body-tertiary">
                 <div className="d-flex flex-column justify-content-center align-items-center py-5 px-3">
                     <h2 className="fs-1 px-5 text-center">BLOG</h2>
                     <span className="fs-4 text-center gradient">Retrouver ici quelques articles sur le développement web.</span>
@@ -82,9 +76,6 @@ const Blog = () => {
                     </div>
                 </div>
             </main>
-            <footer>
-                <Footer />
-            </footer>
         </>
     )
 }

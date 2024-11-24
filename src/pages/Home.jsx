@@ -1,16 +1,14 @@
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return(
         <>
-            <Navbar />
             <main>
                 <div className="container-first-title">
                     <div className="layout-first-title d-flex flex-column justify-content-center align-items-center "> 
                         <h1 className="m-2 p-2 text-light first-title">Bonjour, je suis John Doe</h1>
                         <h2 className="mb-2 p-2 text-light ">Développeur web full stack</h2>
-                        <button type="button" className="btn btn-primary">En savoir plus</button>
+                        <Link to="" type="button" className="btn btn-primary">En savoir plus</Link>
                     </div>
                 </div>
                 <section className="container-fluid mx-auto p-5 bg-body-tertiary">
@@ -60,7 +58,6 @@ const Home = () => {
                     </div>
                 </section>
             </main>
-            <Footer/>
         </>
     )
 }

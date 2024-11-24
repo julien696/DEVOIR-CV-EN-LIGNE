@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom"
 
 export default function Footer() {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
+
     return(
         <>
             <footer className="py-3">
@@ -28,11 +36,11 @@ export default function Footer() {
                         <section className="col-md-6 col-xl-3">
                             <h5>Liens utiles</h5>
                             <ul className="ps-3">
-                                <li><Link to="/">Accueil</Link></li>
+                                <li><Link to="/" onClick={scrollToTop}>Accueil</Link></li>
                                 <li><Link to="/">À propos</Link></li>
-                                <li><Link to="/service">Services</Link></li>
-                                <li><Link to="/contact">Me contacter</Link></li>
-                                <li><Link to="/legal">Mentions légales</Link></li>
+                                <li><Link to="/service" onClick={scrollToTop}>Services</Link></li>
+                                <li><Link to="/contact" onClick={scrollToTop}>Me contacter</Link></li>
+                                <li><Link to="/legal" onClick={scrollToTop}>Mentions légales</Link></li>
                             </ul>
                         </section>
                         <section className="col-md-6 col-xl-3">
