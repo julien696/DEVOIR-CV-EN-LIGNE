@@ -1,4 +1,72 @@
+import { useState } from "react";
+
 const Contact = () => {
+
+   const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+   });
+
+   const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+   });
+
+   const validateForm = () => {
+    let formErrors = {};
+    let isValid = true;
+
+    if (!formData.name) {
+        formErrors.name = 'Le nom est requis.';
+        isValid = false;    
+    }
+
+    if (!formData.email) {
+        formErrors.email = `L'email est requis`;
+        isValid = false;    
+    }
+
+    if (!formData.phone) {
+        formErrors.phone = 'le téléphone est requis.';
+        isValid = false;    
+    }
+
+    if (!formData.subject) {
+        formErrors.subject = 'le sujet est requis.';
+        isValid = false;    
+    }
+
+    if (!formData.message) {
+        formErrors.message = 'le message est requis.';
+        isValid = false;    
+    }
+
+    setErrors(formErrors);
+    return isValid;
+   };
+
+   const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormData({
+        ...formData,
+        [name]: value
+    });
+   };
+
+   const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()){
+        alert('votre formulaire est envoyer')
+    }
+   };
+    
     return(
         <>
             <main>
@@ -13,13 +81,13 @@ const Contact = () => {
                                 <div className="row row-cols-1 row-cols-md-2">
                                     <div className="col">
                                         <h3 className="fs-2 pb-2 my-3 border-bottom border-primary border-3">Formulaire de contact</h3>
-                                        <form className="text-center my-5" action="#" method="post">
-                                            <input className="form-control mb-3" type="text" placeholder="Votre nom"/>
-                                            <input className="form-control mb-3" type="email" placeholder="Votre adresse e-mail"/>
-                                            <input className="form-control mb-3" type="tel" placeholder="Votre numéro de téléphone"/>
-                                            <input className="form-control mb-3" type="text" placeholder="Sujet"/>
-                                            <textarea className="form-control mb-3" rows="6" placeholder="Votre message"></textarea>
-                                            <button className="btn btn-primary" type="submit">Envoyer</button>
+                                        <form onSubmit={handleSubmit} className="text-center my-5">
+                                            <input className="form-control mb-3" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Votre nom"/>
+                                            <input className="form-control mb-3" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Votre adresse e-mail"/>
+                                            <input className="form-control mb-3" type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Votre numéro de téléphone"/>
+                                            <input className="form-control mb-3" type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Sujet"/>
+                                            <textarea className="form-control mb-3" rows="6" name="message" value={formData.message} onChange={handleChange} placeholder="Votre message"></textarea>
+                                            <button type="submit" className="btn btn-primary">Envoyer</button>
                                         </form>
                                     </div>
                                     <div className="col">
