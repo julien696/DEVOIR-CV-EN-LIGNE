@@ -13,7 +13,7 @@ const Home = () => {
                 </div>
                 <section className="container-fluid mx-auto p-5 bg-body-tertiary">
                     <div className="row shadow bg-white">
-                        <article className="col-md-6 px-4 py-5">
+                        <article id="about" className="col-md-6 px-4 py-5">
                             <h3 className="fs-2 pb-2 mb-3 border-bottom border-primary border-3">À propos</h3>
                             <p className="fs-5">Passioné par l'informatique et les nouvelles technologies,
                                 j'ai suivi une formation d'<strong>intégrateur-développeur web </strong>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 
 export default function Footer() {
@@ -8,6 +9,23 @@ export default function Footer() {
           behavior: 'smooth',
         });
       };
+
+    const [isVisible, setIsVisible] = useState(false);
+    const handleScroll = () => {
+        if (window.scrollY > 500) {
+            setIsVisible(true);
+        }else{
+            setIsVisible(false);
+        };
+    };
+
+    useEffect(()=> {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return(
         <>
@@ -37,7 +55,7 @@ export default function Footer() {
                             <h5>Liens utiles</h5>
                             <ul className="ps-3">
                                 <li><Link to="/" onClick={scrollToTop}>Accueil</Link></li>
-                                <li><Link to="/">À propos</Link></li>
+                                <li><Link to="/" onClick={scrollToTop}>À propos</Link></li>
                                 <li><Link to="/service" onClick={scrollToTop}>Services</Link></li>
                                 <li><Link to="/contact" onClick={scrollToTop}>Me contacter</Link></li>
                                 <li><Link to="/legal" onClick={scrollToTop}>Mentions légales</Link></li>
@@ -65,6 +83,7 @@ export default function Footer() {
                     <img src="../public/icon/copyright-regular.svg" alt="signe copyright" style={{width:'16px'}} />
                     <span className="text-white ps-1">Designed by John Doe</span>
                 </div>
+                {isVisible && (<button onClick={scrollToTop} className="btn btn-primary btn-hover fixed-bottom-right">↑↑</button>)}
             </footer>
         </>
     )

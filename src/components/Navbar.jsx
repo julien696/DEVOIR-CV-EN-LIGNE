@@ -13,19 +13,19 @@ export default function Navbar() {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item mx-lg-1">
-                                <Link to="/" className="nav-link py-3 px-0 px-lg-3 rounded text-white-50">Acceuil</Link>
+                                <Link to="/" className="nav-link py-3 px-0 px-lg-3 rounded link-hover">Acceuil</Link>
                                 </li>
                                 <li className="nav-item mx-lg-1">
-                                <Link to="/service" className="nav-link py-3 px-0 px-lg-3 rounded text-white-50">Services</Link>
+                                <Link to="/service" className="nav-link py-3 px-0 px-lg-3 rounded link-hover">Services</Link>
                                 </li>
                                 <li className="nav-item mx-lg-1">
-                                <Link to="/portfolio" className="nav-link py-3 px-0 px-lg-3 rounded text-white-50">Réalisations</Link>
+                                <Link to="/portfolio" className="nav-link py-3 px-0 px-lg-3 rounded link-hover">Réalisations</Link>
                                 </li>
                                 <li className="nav-item mx-lg-1">
-                                <Link to="/blog" className="nav-link py-3 px-0 px-lg-3 rounded text-white-50">Blog</Link>
+                                <Link to="/blog" className="nav-link py-3 px-0 px-lg-3 rounded link-hover">Blog</Link>
                                 </li>
                                 <li className="nav-item mx-lg-1">
-                                <Link to="/contact" className="nav-link py-3 px-0 px-lg-3 rounded text-white-50">Me Contacter</Link>
+                                <Link to="/contact" className="nav-link py-3 px-0 px-lg-3 rounded link-hover">Me Contacter</Link>
                                 </li>
                             </ul>
                         </div>
