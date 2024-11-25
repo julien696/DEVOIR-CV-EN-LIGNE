@@ -49,11 +49,6 @@ footer li{
     background-repeat: no-repeat;
 }
 
-.logo{
-    max-height: 48px;
-    margin:1rem ;
-}
-
 .icon{
     width: 16px;
 }
@@ -61,6 +56,46 @@ footer li{
 .underline{
     text-decoration: underline dotted;
 }
+
+/*survole d'un lien*/
+
+.link-hover{
+    color: rgba(225, 225, 225, 0.5);
+}
+
+.link-hover:hover{
+    color: rgba(225, 225, 225, 0.8);
+    transition: 0.5s;
+}
+
+
+/*icon service*/
+
+.section:hover .logo{
+    fill: #cde1f8;
+    transition: 0.5s;
+}
+
+.logo{
+    max-height: 48px;
+    margin:1rem ;
+    fill: #0d6efd;
+}
+
+
+/*bouton retour vers le haut*/
+
+.btn-hover:hover{
+    background-color: #298eff;
+    transition: 0.5s;
+}
+
+.fixed-bottom-right{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 /*Home Page*/
 
 .container-first-title{
