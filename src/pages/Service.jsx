@@ -23,14 +23,14 @@ const Service = () => {
                             <img src="../public/icon/file-code-solid.svg" alt="icon d'un fichier." className="logo"/>
                             <h3 className="fs-3">DÉVELOPPEMENT WEB</h3>
                             <p>
-                                Le<strong> développement des sites web </strong>repose sur l'utilisation des langages
-                                HTML, CSS, JavaScript et PHP.
+                                Le<strong> développement des sites web </strong>repose sur l'utilisation des langages <span className="underline">HTML</span>, <span className="underline">CSS,</span> JavaScript 
+                                et <span className="underline">PHP</span>.
                             </p>
                         </section>
                         <section className="col-md-3 flex-grow-1 bg-white border rounded-3 m-3 pt-3 pb-5">
                             <img src="../public/icon/magnifying-glass-dollar-solid.svg" alt="icon d'une loupe avec le signe du dollar à l'intérieur." className="logo"/>
                             <h3 className="fs-3">RÉFÉRENCEMENT</h3>
-                            <p>Le<strong> référencement naturel d'un site, </strong>aussi appelé SEO, consiste à mettre
+                            <p>Le<strong> référencement naturel d'un site, </strong>aussi appelé <span className="underline">SEO</span>, consiste à mettre
                             des techniques en oeuvre pour améliorer sa position dans les résultats des moteurs de recherche.</p>
                         </section>
                     </div>
