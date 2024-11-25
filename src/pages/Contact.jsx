@@ -64,7 +64,15 @@ const Contact = () => {
 
     if (validateForm()){
         alert('votre formulaire est envoyer')
-    }
+    };
+
+    setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+    })
    };
     
     return(
@@ -82,11 +90,26 @@ const Contact = () => {
                                     <div className="col">
                                         <h3 className="fs-2 pb-2 my-3 border-bottom border-primary border-3">Formulaire de contact</h3>
                                         <form onSubmit={handleSubmit} className="text-center my-5">
-                                            <input className="form-control mb-3" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Votre nom"/>
-                                            <input className="form-control mb-3" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Votre adresse e-mail"/>
-                                            <input className="form-control mb-3" type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Votre numéro de téléphone"/>
-                                            <input className="form-control mb-3" type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Sujet"/>
-                                            <textarea className="form-control mb-3" rows="6" name="message" value={formData.message} onChange={handleChange} placeholder="Votre message"></textarea>
+                                            <div>
+                                                <input className="form-control mb-3" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Votre nom"/>
+                                                {errors.name && <p className="text-danger">{errors.name}</p>}
+                                            </div>
+                                            <div>
+                                                <input className="form-control mb-3" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Votre adresse e-mail"/>
+                                                {errors.email && <p className="text-danger">{errors.email}</p>}
+                                            </div>
+                                            <div>
+                                                <input className="form-control mb-3" type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Votre numéro de téléphone"/>
+                                                {errors.phone && <p className="text-danger">{errors.phone}</p>}
+                                            </div>
+                                            <div>
+                                                <input className="form-control mb-3" type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Sujet"/>
+                                                {errors.subject && <p className="text-danger">{errors.subject}</p>}
+                                            </div>
+                                            <div>
+                                                <textarea className="form-control mb-3" rows="6" name="message" value={formData.message} onChange={handleChange} placeholder="Votre message"></textarea>
+                                                {errors.message && <p className="text-danger">{errors.message}</p>}
+                                            </div>
                                             <button type="submit" className="btn btn-primary">Envoyer</button>
                                         </form>
                                     </div>
