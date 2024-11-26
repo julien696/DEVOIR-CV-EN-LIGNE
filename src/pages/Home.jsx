@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+    const navigate = useNavigate();
+    
+    const handleClick = () => {
+        navigate('/profil')
+    };
+
     return(
         <>
             <main>
@@ -8,7 +16,7 @@ const Home = () => {
                     <div className="layout-first-title d-flex flex-column justify-content-center align-items-center "> 
                         <h1 className="m-2 p-2 text-light first-title">Bonjour, je suis John Doe</h1>
                         <h2 className="fs-2 fs-md-1 mb-2 p-2 text-light ">Développeur web full stack</h2>
-                        <Link to="/profil"><button type="button" className="btn btn-primary">En savoir plus</button></Link>
+                        <button onClick={handleClick} type="button" className="btn btn-primary">En savoir plus</button>
                     </div>
                 </div>
                 <section className="container-fluid mx-auto p-5 bg-body-tertiary">
