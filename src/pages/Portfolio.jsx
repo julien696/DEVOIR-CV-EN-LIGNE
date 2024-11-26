@@ -8,7 +8,7 @@ const Portfolio = () => {
                     <img src="../public/img/banner.jpg" alt="banner théme bleu et lumiére" className="img-fluid" style={{minWidth:'100%', maxHeight:'10rem'}}/>
                 </div>
                 <div className="d-flex flex-column justify-content-center align-items-center py-5 px-3">
-                    <h2 className="fs-1 px-5 text-center">PORTFOLIO</h2>
+                    <h1 className="fs-1 px-5 text-center">PORTFOLIO</h1>
                     <span className="fs-4 text-center gradient">Voici quelques-unes de mes réalisations</span>
                 </div>
                 <div className="container-fluid py-5">

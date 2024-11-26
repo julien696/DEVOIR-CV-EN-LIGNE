@@ -10,6 +10,7 @@ import Service from "./pages/Service";
 import Legal from "./pages/Legal";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Profil from "./pages/Profil"
 
 export default function App () {
   return(
@@ -22,6 +23,7 @@ export default function App () {
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/service" element={<Service />}></Route>
         <Route path="/legal" element={<Legal />}></Route>
+        <Route path="/profil" element={<Profil />}></Route>
       </Routes>
       <Footer/>
     </div>

@@ -3,7 +3,7 @@ export default function CardBlog(props) {
         <>   
             <img src={props.src} className="card-img-top" alt={props.alt} />
                 <div className="card-body">
-                    <h3 className="card-title">{props.title}</h3>
+                    <h2 className="card-title">{props.title}</h2>
                     <p className="card-text">{props.text}</p>
                     <a href="#" className="btn btn-primary">Voir</a>
                 </div>
