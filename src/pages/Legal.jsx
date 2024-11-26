@@ -3,18 +3,18 @@ const Legal = () => {
         <>
             <main className="bg-body-tertiary">
                 <div className="d-flex flex-column justify-content-center align-items-center py-5 px-3">
-                    <h2 className="fs-1 px-5 text-center gradient">MENTIONS LÉGALES</h2>
+                    <h1 className="fs-1 px-5 text-center gradient">MENTIONS LÉGALES</h1>
                 </div>
                 <div className="accordion px-3 py-4" id="accordionExample">
                     <div className="accordion-item">
-                        <h3 className="accordion-header">
+                        <h2 className="accordion-header">
                             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Éditeur de site
                             </button>
-                        </h3>
+                        </h2>
                         <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <h4>John Doe</h4>
+                                <h3>John Doe</h3>
                                 <div>
                                     <div>
                                         <img src="../public/icon/location-dot-solid.svg" alt="Icon de localisation" className="icon"/>
@@ -34,14 +34,14 @@ const Legal = () => {
                         </div>
                     </div>
                     <div className="accordion-item">
-                        <h3 className="accordion-header">
+                        <h2 className="accordion-header">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Hébergeur
                             </button>
-                        </h3>
+                        </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <h4>Always Data</h4>
+                                <h3>Always Data</h3>
                                 <span>91 rue du Faubourg Saint Honoré</span><br />
                                 <span>75008 Paris</span>
                                 <div>
@@ -52,14 +52,14 @@ const Legal = () => {
                         </div>
                     </div>
                     <div className="accordion-item">
-                        <h3 className="accordion-header">
+                        <h2 className="accordion-header">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Crédits
                             </button>
-                        </h3>
+                        </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <h4>Crédits</h4>
+                                <h3>Crédits</h3>
                                 <span>Site développé par John Doe, étudiant du CEF.</span><br />
                                 <span>Les images libres de droit, sont issues du site <a href="https://pixabay.com/fr/">Pixabay</a>.</span>
                             </div>
