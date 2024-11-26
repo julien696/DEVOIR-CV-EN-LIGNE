@@ -1,6 +1,15 @@
+import { Helmet } from "react-helmet";
+
 const Legal = () => {
     return(
         <>
+
+        <Helmet>
+            <title>Page non indexée</title>
+            <meta name="robots" content="noindex, nofollom" />
+            <meta name="description" content="La page mention légale ne sera pas indexée par les moteurs de recherche."/>
+        </Helmet>
+        
             <main className="bg-body-tertiary">
                 <div className="d-flex flex-column justify-content-center align-items-center py-5 px-3">
                     <h1 className="fs-1 px-5 text-center gradient">MENTIONS LÉGALES</h1>
