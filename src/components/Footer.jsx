@@ -64,17 +64,17 @@ export default function Footer() {
                         <section className="col-md-6 col-xl-3">
                             <h5>Mes dernières réalisations</h5>
                             <ul className="ps-3">
-                                <li><Link to="/portfolio">Fresh food</Link></li>
-                                <li><Link to="/portfolio">Restaurant Akira</Link></li>
-                                <li><Link to="/portfolio">Espace bien-être</Link></li>
+                                <li><Link to="/portfolio" onClick={scrollToTop}>Fresh food</Link></li>
+                                <li><Link to="/portfolio" onClick={scrollToTop}>Restaurant Akira</Link></li>
+                                <li><Link to="/portfolio" onClick={scrollToTop}>Espace bien-être</Link></li>
                             </ul>
                         </section>
                         <section className="col-md-6 col-xl-3">
                             <h5>Mes derniers articles</h5>
                             <ul className="ps-3">
-                                <li><Link to="/blog">Coder son site en HTML/CSS</Link></li>
-                                <li><Link to="/blog">Vendre ses produits sur le web</Link></li>
-                                <li><Link to="/blog">Se positionner sur Google</Link></li>
+                                <li><Link to="/blog" onClick={scrollToTop}>Coder son site en HTML/CSS</Link></li>
+                                <li><Link to="/blog" onClick={scrollToTop}>Vendre ses produits sur le web</Link></li>
+                                <li><Link to="/blog" onClick={scrollToTop}>Se positionner sur Google</Link></li>
                             </ul>
                         </section>
                     </div>
